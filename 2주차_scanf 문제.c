@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int main() {
-	// ¹®Á¦ 1.
+	// ë¬¸ì œ 1.
 	int value1;
 	int value2;
 	scanf("%d" ,&value1);
@@ -12,9 +12,9 @@ int main() {
 	printf("%d - %d = %d\n", value1, value2, value1 - value2);
 	return 0;
 
-	//¹®Á¦ 2.
+	// ë¬¸ì œ 2.
 
-	//¹®Á¦ 3.
+	// ë¬¸ì œ 3.
 
-	//¹®Á¦ 4.
+	//  4.
 }
