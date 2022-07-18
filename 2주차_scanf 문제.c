@@ -19,6 +19,20 @@ int main() {
 	printf("가족 나이의 총합은 %d 세 입니다.", mom_age + dad_age + sis_age + my_age + bro_age);
 
 	// 문제 3.
+	int first_name, second_name, third_nae;
+	printf("이름 각각의 글자의 획수를 차례대로 입력해주세요.\n");
+	scanf("%d %d %d", &first_name, &second_name, &third_name);
+	printf("이름 총 획수는 %d 획 입니다.", first_name + second_name + third_name);
 
-	//  4.
+	// 문제 4.
+	int 제육, 돈까스;
+	printf("제육볶음 개수를 입력하세요.\n");
+	scanf("%d", &제육);
+	printf("돈까스 개수를 입력하세요.\n");
+	scanf("%d", &돈까스);
+	printf("총 금액은 %d 입니다.", 제육*6000+돈까스*5000);
+	
+	//문제 5.
+	scanf("%d %d %d", &a, &b, &c);
+	printf("%d", (a+b)*2);
 }
