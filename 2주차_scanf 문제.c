@@ -35,4 +35,6 @@ int main() {
 	//문제 5.
 	scanf("%d %d %d", &a, &b, &c);
 	printf("%d", (a+b)*2);
+	
+	return 0;
 }
