@@ -19,16 +19,16 @@ int main() {
   }  
   
   // 문제 3.
-  int a, b, k;
-  int sum_ab = 0;
+  int q, p, k;
+  int sum_qp = 0;
   printf("첫번째 수를 입력하세요.\n");
-  scanf("%d", &a);
+  scanf("%d", &q);
   printf("두번째 수를 입력하세요.\n");
-  scanf("%d", &b);
-  for (k=a; k<=b; k++) {
-    sum_ab += a;
+  scanf("%d", &p);
+  for (k=q; k<=p; k++) {
+    sum_qp += q;
   }
-  printf("%d부터 %d까지의 합은 %d 입니다.\n", a, b, sum_ab);
+  printf("%d부터 %d까지의 합은 %d 입니다.\n", q, p, sum_qp);
   
   // 문제 4.
   for(int l = 1; l<=19; l++;) {
@@ -72,9 +72,35 @@ int main() {
   printf("곱셈 결과 : %d", multi_cal);
   
   // 문제 7.
-  
+  int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
+  scanf("%d %d %d %d %d %d %d %d %d %d", &a1, &a2, &a3, &a4, &a5, &a6, &a7, &a8, &a9, &a10);
+  for(int find = 100; find > 0; find--) {
+    if(find == a1 || find == a2 || find == a3 || find == a4 || find == a5 || find == a6 || find == a7 || find == a8 || find == a9 || find == a10) {
+      break;
+    }
+  }
+  printf("Grid는 %d를 가지고 있을 것이다.\n", find);
   
   // 문제 8.
+  int lop;
+  int state = True;
+  while (state == False) {
+    scanf("%d", &lop);
+    if (lop =0 ) {
+      if (lop %2 == 0) {
+        printf("good\n");
+      }
+      else {
+        printf("bad\n");
+      }
+    }
+    else if (lop < 0) {
+      pritnf("false");
+    }
+    else if (lop = 0) {
+      break;
+    }
+  }
   
   return 0;
   
