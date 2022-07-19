@@ -7,10 +7,11 @@ int main() {
   // 문제 1.
   int i;
   for(i=1; i<=30; i++) {
-    if (i % 2 != 0) {
-      printf(i);
+    if (i % 2 == 0) {
+      printf("%d, ", i);
     }
   }
+  printf("\n");
   
   // 문제 2.
   int j;
@@ -63,14 +64,15 @@ int main() {
   int cal;
   scanf("%d", &cal);
   int plus_cal = 0;
-  int multi_cal = 0;
+  int multi_cal = 1;
   for(int c = 1; c <= cal; c++) {
     plus_cal += c;
     multi_cal *= c;
   }
-  printf("덧셈 결과 : %d", plus_cal);
-  printf("곱셈 결과 : %d", multi_cal);
+  printf("덧셈 결과 : %d\n", plus_cal);
+  printf("곱셈 결과 : %d\n", multi_cal);
   
+                                              //여기서부터 수정 필요
   // 문제 7.
   int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
   int find = 0;
