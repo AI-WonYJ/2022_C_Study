@@ -36,8 +36,11 @@ int main() {
   }
   
   // 문제 4.
-  int scan_di;
-  
+  int scan_di, x;
+  scnaf("%d", &scan_di);
+  while(scan_di <= 0) {
+    divive = scan_di % 10;
+    for(
   // 문제 5.
   
   
