@@ -6,7 +6,7 @@ int main() {
   
   // 문제 1.
   int i;
-  for(i=1; i<=30; i++;) {
+  for(i=1; i<=30; i++) {
     if (i % 2 != 0) {
       printf(i);
     }
@@ -14,7 +14,7 @@ int main() {
   
   // 문제 2.
   int j;
-  for(j=1; j<=9; j++;) {
+  for(j=1; j<=9; j++) {
     printf("7 * %d = %d\n", j, 7*j);
   }  
   
@@ -31,9 +31,9 @@ int main() {
   printf("%d부터 %d까지의 합은 %d 입니다.\n", q, p, sum_qp);
   
   // 문제 4.
-  for(int l = 1; l<=19; l++;) {
+  for(int l = 1; l<=19; l++) {
     for(int o = 1; o<=9; o++) {
-      pritnf("%d * %d = %d\n", l, o ,l*o);
+      printf("%d * %d = %d\n", l, o ,l*o);
     }
     printf("\n");
   }
@@ -41,9 +41,9 @@ int main() {
   // 문제 5.
   int n, count;
   int count_0 = 0;
-  int count_1
+  int count_1 = 0;
   scanf("%d", &n);
-  for(int m = 1; m <= n; m++;) {
+  for(int m = 1; m <= n; m++) {
     scanf("%d", &count);
     if (count == 1) {
       count_1++;
@@ -64,7 +64,7 @@ int main() {
   scanf("%d", &cal);
   int plus_cal = 0;
   int multi_cal = 0;
-  for(int c = 1; c <= cal; c++;) {
+  for(int c = 1; c <= cal; c++) {
     plus_cal += c;
     multi_cal *= c;
   }
@@ -73,6 +73,7 @@ int main() {
   
   // 문제 7.
   int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
+  int find = 0;
   scanf("%d %d %d %d %d %d %d %d %d %d", &a1, &a2, &a3, &a4, &a5, &a6, &a7, &a8, &a9, &a10);
   for(int find = 100; find > 0; find--) {
     if(find == a1 || find == a2 || find == a3 || find == a4 || find == a5 || find == a6 || find == a7 || find == a8 || find == a9 || find == a10) {
@@ -83,8 +84,8 @@ int main() {
   
   // 문제 8.
   int lop;
-  int state = True;
-  while (state == False) {
+  int state = 1;
+  while (state == 1) {
     scanf("%d", &lop);
     if (lop =0 ) {
       if (lop %2 == 0) {
@@ -95,7 +96,7 @@ int main() {
       }
     }
     else if (lop < 0) {
-      pritnf("false");
+      printf("false");
     }
     else if (lop = 0) {
       break;
