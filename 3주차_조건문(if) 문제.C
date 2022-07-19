@@ -9,8 +9,9 @@ int main() {
   printf("숫자를 하나 입력하세요\n");
   scanf("%d", &num);
   if(num > 100) {
-    printf("100보다 큽니다.\n);
+    printf("100보다 큽니다.\n");
   }
+  printf("\n");
            
   // 문제 2.
   int num1, num2;
@@ -24,6 +25,7 @@ int main() {
   if (num1 < num2) {
     printf("두번째 수가 더 큽니다.\n");
   }
+  printf("\n");
   
   // 문제 3.
   int num3, num4;
@@ -37,6 +39,7 @@ int main() {
   else {
     printf("두번째 수가 더 큽니다.\n");
   }
+  printf("\n");
   
   // 문제 4.
   int num5;
@@ -44,9 +47,10 @@ int main() {
   if (num5 < 5 && num5 > 100) {
     printf("두 자리 수가 아닙니다.\n");
   }
+  printf("\n");
   
   // 문제 5.
-  printf("어떤 연산을 하겠습니까?"\n);
+  printf("어떤 연산을 하겠습니까?\n");
   printf("1: 덧셈, 2: 뺄셈, 3: 곱셈, 4: 나눗셈\n");
   int num6, num7, num8;
   scanf("%d", &num6);
