@@ -16,7 +16,7 @@ int main() {
   // 문제 2.
   int scan_star, j, j2;
   scanf("%d", &scan_star);
-  for(j = 1; j <= scan_star; j++){
+  for(j = 1; j <= scan_star; j++;) {
     for(j2 = 1; j2 <= j; j2++) {
       printf("*");
     }
@@ -24,10 +24,19 @@ int main() {
   }
   
   // 문제 3.
-  
+  int k, k2, k3;
+  for(k = 1; k <= 5; k++;) {
+    for(k2 = 1; k2 <= k; k2++; {
+      printf(" ");
+    }
+    for(k3 = 1; k3 <= 5-k; k3++;) {
+      printf("*");
+    }
+    printf("\n")'
+  }
   
   // 문제 4.
-  
+  int scan_di;
   
   // 문제 5.
   
