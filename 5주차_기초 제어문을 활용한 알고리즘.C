@@ -7,7 +7,7 @@ int main() {
             // 약수 찾기
   // 문제 1.
   int measure_num;
-  for(int measure = 1; measure <= measure_num; measure++;) {
+  for(int measure = 1; measure <= measure_num; measure++) {
     if (measure_num % measure == 0) {
       printf("%d\t",measure);
     }
@@ -16,17 +16,17 @@ int main() {
   // 문제 2.
   int measure_num2;
   int measure2_cnt = 0;
-  for(int measure2 = 1; measure2 <= measure_num2; measure2++;) {
+  for(int measure2 = 1; measure2 <= measure_num2; measure2++) {
     if (measure_num2 % measure2 == 0) {
       measure2_cnt++
     }
   }
-  printf("%d",measure2_sum);
+  printf("%d",measure2_cnt);
   
             // 소수 판별하기
   // 문제 3.
-  int prime_cnt
-  for(int i = 1; i <= 503159; i++;) {
+  int prime_cnt;
+  for(int i = 1; i <= 503159; i++) {
     if (503159 % i == 0) {
       prime_cnt++;
     }
@@ -39,8 +39,8 @@ int main() {
   }
   
   // 문제 4.
-  int prime_cnt2
-  for(int i2 = 1; i2 <= 503158; i2++;) {
+  int prime_cnt2;
+  for(int i2 = 1; i2 <= 503158; i2++) {
     if (503158 % i2 == 0) {
       prime_cnt2++;
     }
@@ -57,8 +57,8 @@ int main() {
   int scan_prime;
   printf("숫자 하나를 입력하세요.\n");
   scanf("%d",&scan_prime);
-  int scan_prime_cnt
-   for(int i3 = 1; i3 <= scan_prime; i3++;) {
+  int scan_prime_cnt;
+   for(int i3 = 1; i3 <= scan_prime; i3++) {
     if (503158 % i3 == 0) {
       scan_prime_cnt++;
     }
@@ -95,6 +95,6 @@ int main() {
   }
   printf("%d와 %d의 최대공약수는 %d이다.\n", a2, b2, gcd);
   
-  reteurn 0;
+  return 0;
   
 }
