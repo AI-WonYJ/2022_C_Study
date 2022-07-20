@@ -49,7 +49,19 @@ int main() {
   }
             
   // 문제 5.
-  
+  int p, q;
+  int p_cnt = 0;
+  for(p = 2; p <= 100; p++) {
+      for(q = 1; 1 <= p; q++) {
+          if(p % q == 0){
+              p_cnt++;
+          }
+      }
+      if (p_cnt == 2) {
+          printf("%d, ", p);
+      }
+  }
+  printf("\n");
   
   // 문제 6.
   
