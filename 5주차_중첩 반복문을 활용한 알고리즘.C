@@ -25,11 +25,11 @@ int main() {
   
   // 문제 3.
   int k, k2, k3;
-  for(k = 1; k <= 5; k++;) {
-    for(k2 = 1; k2 <= k; k2++; {
+  for(k = 1; k <= 5; k++) {
+    for(k2 = 1; k2 <= 5-k; k2++) {
       printf(" ");
     }
-    for(k3 = 1; k3 <= 5-k; k3++) {
+    for(k3 = 1; k3 <= k; k3++) {
       printf("*");
     }
     printf("\n");
@@ -37,11 +37,17 @@ int main() {
   
   // 문제 4.
   int scan_di, x;
-  int divive = 0;
-  scnaf("%d", &scan_di);
-  while(scan_di <= 0) {
+  scanf("%d", &scan_di);
+  while(scan_di > 0) {
+    int divive = 0;
     divive = scan_di % 10;
-    for(
+    for(x = 1; x <= divive; x++) {
+        printf("*");
+    }
+    printf("\n");
+    scan_di /= 10;
+  }
+            
   // 문제 5.
   
   
