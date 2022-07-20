@@ -13,20 +13,23 @@ int main() {
   float BMI = weight / (height * height);
   printf("당신의 BMI지수는 %f 입니다.\n", BMI);
   
+            // long long 정수 자료형
   // 문제 2.
+  long long cal_n = 1;
+  int fac_n;
+  printf("몇 팩토리얼을 계산할까요?\n");
+  scanf("%d", &fac_n);
+  for(int n = fac_n; n >= 1; n--) {
+      cal_n *= n;
+      printf("결과는 %lld 입니다.\n", cal_n);
+  }
   
-  
+            // long long 정수 자료형
   // 문제 3.
-  
-  
-  // 문제 4.
-  
-            
-  // 문제 5.
-  
-  
-  // 문제 6.
-  
+  char c;
+  for(c = 'A'; c <= 'Z'; c++) {
+      printf("%c ", c);
+  }
   
   return 0;
 }
