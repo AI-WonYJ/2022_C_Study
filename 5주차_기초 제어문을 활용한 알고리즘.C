@@ -13,7 +13,7 @@ int main() {
             printf("%d  ", measure);
         }
     }
-    printf("");
+    printf("\n");
 
     // 문제 2.
     int measure_num2;
