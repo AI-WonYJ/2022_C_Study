@@ -72,17 +72,17 @@ int main() {
   printf("덧셈 결과 : %d\n", plus_cal);
   printf("곱셈 결과 : %d\n", multi_cal);
   
-                                              //여기서부터 수정 필요
   // 문제 7.
   int a1, a2, a3, a4, a5, a6, a7, a8, a9, a10;
   int find = 0;
   scanf("%d %d %d %d %d %d %d %d %d %d", &a1, &a2, &a3, &a4, &a5, &a6, &a7, &a8, &a9, &a10);
   for(int find = 100; find > 0; find--) {
     if(find == a1 || find == a2 || find == a3 || find == a4 || find == a5 || find == a6 || find == a7 || find == a8 || find == a9 || find == a10) {
+      printf("Grid는 %d를 가지고 있을 것이다.\n", find);
       break;
     }
   }
-  printf("Grid는 %d를 가지고 있을 것이다.\n", find);
+  
   
   // 문제 8.
   int lop;
@@ -93,12 +93,12 @@ int main() {
       if (lop %2 == 0) {
         printf("good\n");
       }
+      else if (lop < 0) {
+        printf("false\n");
+      }
       else {
         printf("bad\n");
       }
-    }
-    else if (lop < 0) {
-      printf("false");
     }
     else if (lop = 0) {
       break;
