@@ -50,9 +50,9 @@ int main() {
             
   // 문제 5.
   int p, q;
-  int p_cnt = 0;
   for(p = 2; p <= 100; p++) {
-      for(q = 1; 1 <= p; q++) {
+      int p_cnt = 0;
+      for(q = 1; q <= p; q++) {
           if(p % q == 0){
               p_cnt++;
           }
@@ -64,10 +64,16 @@ int main() {
   printf("\n");
   
   // 문제 6.
-  
-  
-  // 문제 7.
-  
+  int dice_1, dice_2, dice_3;
+  for(dice_1 = 1; dice_1 <= 6; dice_1++) {
+      for(dice_2 = 1; dice_2 <= 6; dice_2++) {
+          for(dice_3 = 1; dice_3 <= 6; dice_3++) {
+              if (dice_1 + dice_2 + dice_3 == 15) {
+                  printf("%d %d %d\n", dice_1, dice_2, dice_3);
+              }
+          }
+      }
+  }
   
   return 0;
 }
