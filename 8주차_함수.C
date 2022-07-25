@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
   // 문제 1.
 int hap(int n_1) {
@@ -80,7 +81,7 @@ int big() {
     else if (scan_6_2 > scan_6_1) {
         bigger = scan_6_2;
     }
-    return bigger
+    return bigger;
     }
 
   // 문제 7.
@@ -110,6 +111,42 @@ int sniffling_8() {
     }
     return sinffl;
     }
+
+  // 문제 9.
+int sqr_9() {
+    int scan_9_1, scan_9_2;
+    int sqr_9 = 0;
+    printf("첫 번째 수를 입력하세요.\n");
+    scanf("%d", &scan_9_1);
+    printf("두 번째 수를 입력하세요.\n");
+    scanf("%d", &scan_9_2);
+    sqr_9 = pow(scan_9_1, scan_9_2);
+    return sqr_9;
+    }
+
+  // 문제 10.
+int biggest() {
+    int scan_10_1, scan_10_2, scan_10_3;
+    int big_10 = 0;
+    printf("첫 번째 수를 입력하세요.\n");
+    scanf("%d", &scan_10_1);
+    printf("두 번째 수를 입력하세요.\n");
+    scanf("%d", &scan_10_2);
+    printf("세 번째 수를 입력하세요.\n");
+    scanf("%d", &scan_10_3);
+    big_10 = scan_10_1;
+    if (big_10 < scan_10_2) {
+        big_10 = scan_10_2;
+    }
+    if (big_10 < scan_10_3) {
+        big_10 = scan_10_3;
+    }
+    return big_10;
+}
+
+
+
+
 
 
 
@@ -146,13 +183,19 @@ int main() {
   hello_5();
   
   // 문제 6.
-  pritnf("%d", big());
+  printf("%d", big());
   
   // 문제 7.
   sniffling();
   
   // 문제 8.
   printf("%d\n",sniffling_8());
+  
+  // 문제 9.
+  printf("%d\n",sqr_9());
+  
+  // 문제 10.
+  printf("%d\n",biggest());
   
   return 0;
 }
