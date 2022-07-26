@@ -21,8 +21,33 @@ int fibo(int n_3) {
     else return fibo(n_3-1) + fibo(n_3-2);
 }
 
+    // 문제 4.
+int measure(int n_4_1, int n_4_2) {
+    if(n_4_1 % n_4_2 == 0) return n_4_2; 
+    else return measure(n_4_2, n_4_1 % n_4_2);
+}
 
+    // 문제 5.
+int divive(int n_5) {
+    int num = 0;
+    int divive_num = 0;
+    num = n_5 % 10;
+    divive_num = n_5 / 10;
+    if(num == 0 && divive_num == 0) return n_5;
+    printf("%d\n", num);
+    return divive(divive_num);
+}
 
+    // 문제 6.
+int pyramid(int base, int n_6) {
+    int pyramid_num = 0;
+    for(int i = 1; i <= n_6; i++) {
+        printf("*");
+    }
+    printf("\n");
+    if (n_6 == base) return 0;
+    else return pyramid(base, n_6+1);
+}
 
 
 
@@ -54,7 +79,26 @@ int main() {
     printf("피보나치 수열 수를 입력하세요\n");
     scanf("%d", &fibo_scan);
     printf("결과 : %d\n", fibo(fibo_scan));
+    
+        // 최대공약수 찾기 함수: 유클리드 호제법
+    // 문제 4.
+    int measure_scan_1, measure_scan_2;
+    printf("최대공약수를 찾을 두 수를 입력하세요\n");
+    scanf("%d %d", &measure_scan_1, &measure_scan_2);
+    printf("결과 : %d\n", measure(measure_scan_1, measure_scan_2));
+    
+        // 재귀함수 알고리즘 실습
+    // 문제 5.
+    int divive_scan;
+    printf("쪼갤 수를 입력하세요\n");
+    scanf("%d", &divive_scan);
+    divive(divive_scan);
+    
+    // 문제 6.
+    int pyramid_scan;
+    printf("별 피라미드 층 수를 입력하세요\n");
+    scanf("%d", &pyramid_scan);
+    pyramid(pyramid_scan, 1);
 
-    retu
     return 0;
 }
